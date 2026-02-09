@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashana Medical Center - Doctors</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <img src="assets/images/hospital-logo.png" alt="Ashana Medical Center Logo" class="logo">
+        <h1>Ashana Medical Center</h1>
+    </div>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="patients.html">Patients</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Add New Doctor</h2>
+        <form id="doctor-form">
+            <input type="text" id="doctor-name" placeholder="Name" required>
+            <input type="text" id="specialty" placeholder="Specialty" required>
+            <input type="text" id="doctor-contact" placeholder="Contact" required>
+            <input type="text" id="availability" placeholder="Availability" required>
+            <button type="submit">Add Doctor</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Doctor List</h2>
+        <input type="text" id="doctor-search" placeholder="Search by Name">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Specialty</th>
+                    <th>Contact</th>
+                    <th>Availability</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="doctor-table-body"></tbody>
+        </table>
+    </section>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/doctor.js"></script>
+</body>
+</html>

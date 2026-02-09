@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashana Medical Center - Appointments</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <img src="assets/images/hospital-logo.png" alt="Ashana Medical Center Logo" class="logo">
+        <h1>Ashana Medical Center</h1>
+    </div>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="patients.html">Patients</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Schedule Appointment</h2>
+        <form id="appointment-form">
+            <input type="text" id="patient-name" placeholder="Patient Name" required>
+            <input type="text" id="doctor-name" placeholder="Doctor Name" required>
+            <input type="date" id="appointment-date" required>
+            <input type="time" id="appointment-time" required>
+            <button type="submit">Schedule</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Appointments List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Patient</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="appointment-table-body"></tbody>
+        </table>
+    </section>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/appointment.js"></script>
+</body>
+</html>
